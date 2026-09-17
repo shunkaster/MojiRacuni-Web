@@ -1,8 +1,10 @@
-# Moji Računi v4.3.1 Secure Cloud
+# Moji Računi v4.4
 
-- Ručno dodata nova stavka (npr. Cash kredit) odmah se kopira u sve već postojeće buduće mesece.
-- Ne pravi duplikat ako ista stavka već postoji u budućem mesecu.
-- Kopirana stavka je neplaćena, sa istim nazivom, lokacijom, iznosom i napomenom.
-- Novi meseci se i dalje nasleđuju iz prethodnog meseca.
-- Standardni računi zadržavaju fiksni redosled; nestandardni računi se prikazuju iza njih.
-- Cloud i Google autentikacija nisu menjani.
+Promene:
+- redizajniran dashboard: naglašeni Preostalo, Ukupno i Plaćeno
+- Kragujevac i Beograd vizuelno podeljeni na Račune i Ostalo
+- Istorija je sada evidencija plaćenih računa sa datumom/vremenom za nova plaćanja
+- svi podaci pre septembra 2026 se uklanjaju iz lokalnih i cloud podataka
+- Statistika računa isključivo plaćene račune
+- Podešavanja opisuju Secure Cloud i Google prijavu; JSON backup/restore ostaje kao korisna rezervna kopija
+- postojeća Firebase autentikacija i sinhronizacija ostaju iste
