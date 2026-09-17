@@ -1,3 +1,3 @@
-# Moji Računi Web v3.3
+# Moji Računi v4.0 Cloud TEST
 
-Uklonjen tekst Klikni za izmenu, centriran i povećan iznos, dodat tab Statistika sa mesečnim pregledom i uklonjen račun Ostalo.
+Firestore cloud sync, bez login-a. Prvi uređaj postavlja početno stanje ako cloud dokument ne postoji. Test Mode je privremen.
