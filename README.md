@@ -1,5 +1,11 @@
-# Moji Računi v4.4.1
-- Septembar 2026 je apsolutni početni mesec; nije moguće otići strelicom na raniji mesec.
-- Leva strelica je onemogućena kada je prikazan septembar 2026.
-- Nova wallet/računi ikonica za browser favicon, PWA i Add to Home Screen.
-- Sve funkcije v4.4 ostaju nepromenjene.
+# Moji Računi v4.5 Colorful
+
+Vizuelni redizajn zasnovan na odabranoj skici:
+- plavi Ukupno, zeleni Plaćeno i crveno/roze Preostalo paneli
+- izraženije lokacije Kragujevac/Beograd
+- vizuelno bogatije sekcije Računi i Ostalo
+- kolor akcenti u Istoriji, Statistici i Podešavanjima
+- modernije kartice, senke, pozadina i bottom navigation
+
+Funkcionalnost, Firebase, autentikacija, podaci, mesečna logika, istorija plaćanja,
+statistika i starting point Septembar 2026 nisu menjani.

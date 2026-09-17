@@ -13,3 +13,68 @@
 @media(max-width:430px){.heroMain>strong{font-size:32px}.heroMetric b{font-size:18px}}
 
 .monthnav button:disabled{opacity:.22;cursor:not-allowed;background:#eef2f7}
+
+/* ===== v4.5 COLORFUL UI — presentation only ===== */
+:root{
+ --blue:#2878e8;--green:#20b965;--red:#ef3f62;--orange:#f59e42;
+ --purple:#7c5ce7;--cyan:#3ba7e8;--softblue:#eaf5ff;--softgreen:#e9fbef;
+ --softred:#fff0f3;--softorange:#fff5e9
+}
+body{background:linear-gradient(180deg,#f7fbff 0,#f3f7fc 42%,#eef4fa 100%)}
+header{background:linear-gradient(90deg,#f8fbff,#fff);border-bottom:1px solid #e5eef8;margin-bottom:7px}
+h1{color:#10265d;letter-spacing:-.6px}
+.cloudStatus{background:#f0fff5;border:1px solid #ccefd8;color:#159447;padding:7px 10px;border-radius:999px}
+.monthnav>div b{font-size:20px;color:#10265d}.monthnav button{color:#276ed5;border:1px solid #dce8f6;box-shadow:0 3px 10px #245a9410}
+
+/* three-color dashboard */
+.hero{background:white;color:#10265d;border:1px solid #e0eaf5;box-shadow:0 9px 28px #183f6d12;padding:12px;display:grid;grid-template-columns:1fr 2fr;gap:10px}
+.heroMain{background:linear-gradient(135deg,#fff0f3,#ffdce4);border:1px solid #ffd0da;border-radius:18px;padding:14px;text-align:left}
+.heroMain>small{color:#bf2745;opacity:1;font-weight:900}.heroMain>strong{color:#b71738;font-size:28px;margin-top:8px}
+.heroRow{gap:10px}.heroMetric{padding:14px;border:1px solid transparent}
+.totalMetric{background:linear-gradient(135deg,#eaf5ff,#d8ecff);border-color:#cce5ff}.totalMetric span{color:#1763b5;opacity:1}.totalMetric b{color:#1455a0;font-size:20px}
+.paidMetric{background:linear-gradient(135deg,#e9fbef,#d6f8e2);border-color:#c7f0d5}.paidMetric span{color:#148044;opacity:1}.paidMetric b{color:#087a3b;font-size:20px}
+.progress{grid-column:1/-1;background:#ffe0e6;margin:2px 5px 0;height:9px}.progress i{background:linear-gradient(90deg,#25c26e,#48d889)}
+.pct{grid-column:1/-1;color:#52677f;opacity:1;margin:-5px 5px 0}
+
+/* location selectors */
+.locations button{box-shadow:0 3px 12px #1f4d7c0b;border-color:#dfe9f4}
+.locations button:first-child.on{background:#fff0f3;border-color:#ffc5d1;color:#cf294a}
+.locations button:last-child.on{background:#eaf5ff;border-color:#bfddff;color:#1767c3}
+
+/* category headings and bill cards */
+.sectionTitle b{color:#10265d}.sectionTitle button{background:#eaf3ff;border-radius:10px;padding:7px 10px}
+.costGroup{background:#ffffff88;border:1px solid #e4edf6;border-radius:20px;margin:0 12px 18px;padding:8px 0 10px;box-shadow:0 5px 18px #1b4a7710}
+.groupHeading{color:#1767c3}.groupHeading:before{content:'▤';display:grid;place-items:center;width:25px;height:25px;border-radius:8px;background:#e4f2ff;color:#1770d5}
+.otherGroup{border-top:0;background:linear-gradient(180deg,#fffdfb,#fff8f0);border-color:#f4dfc7}
+.otherGroup .groupHeading{color:#d36b15}.otherGroup .groupHeading:before{content:'◈';background:#fff0df;color:#e17318}
+.bill{border-color:#e4edf5;box-shadow:0 3px 12px #123b680a;transition:.15s ease}.bill:active{transform:scale(.99)}
+.billIcon{background:linear-gradient(135deg,#eaf5ff,#ddecff);color:#1770d5}
+.otherGroup .billIcon{background:linear-gradient(135deg,#fff4e8,#ffe6cc)}
+.bill.done{background:linear-gradient(90deg,#f5fff8,#edfff3);border-color:#ccefd8}
+.amt{color:#10265d}.unpaid{background:#fff0f3;color:#d72d4e}.paidBadge{background:#dcfbea;color:#0d8746}
+
+/* history */
+.pageTitle h2{color:#10265d}.historyCard{border-left:4px solid #2d7fe8;box-shadow:0 4px 15px #153e6910}
+.paymentLog:nth-child(3n+2){border-left-color:#23b968}.paymentLog:nth-child(3n){border-left-color:#f29a3d}
+
+/* statistics */
+.statBox:first-child{background:linear-gradient(135deg,#eaf5ff,#dceeff);border-color:#cce4ff}
+.statBox:nth-child(2){background:linear-gradient(135deg,#e9fbef,#d9f8e4);border-color:#c9efd6}
+.statBox b{color:#10265d}.chartCard{box-shadow:0 5px 18px #153e6910}
+.vbarWrap i{background:linear-gradient(180deg,#4da0ff,#2674db)}
+.statRow:nth-child(even){background:#f8fbff;margin:0 -8px;padding-left:8px;padding-right:8px;border-radius:9px}
+
+/* settings */
+.settingCard{box-shadow:0 4px 15px #153e690c}.settingCard:nth-child(2){border-left:4px solid #24b968}.settingCard:nth-child(3){border-left:4px solid #2d7fe8}
+
+/* bottom nav */
+.bottom{box-shadow:0 -7px 24px #163d6710}.bottom button.active{color:#176ed0}.bottom button.active span{background:#e7f2ff;border-radius:10px;padding:4px 10px;display:inline-block}
+
+/* mobile dashboard remains compact */
+@media(max-width:480px){
+ .hero{grid-template-columns:1fr 1fr;padding:10px}
+ .heroMain{grid-column:1/-1;text-align:center;padding:12px}
+ .heroMain>strong{font-size:31px}
+ .heroRow{grid-column:1/-1}
+ .heroMetric b{font-size:18px}
+}
