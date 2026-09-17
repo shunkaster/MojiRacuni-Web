@@ -1,6 +1,6 @@
-# Moji Računi Web v2
+# Moji Računi Web v3
 
-PWA za evidenciju računa. v2 dodaje moderniji mobilni izgled, procenat plaćenih računa, istoriju i JSON backup/restore.
+Veliki mobilni redizajn: dashboard, kartice računa, statusi, bottom navigation, istorija, backup/restore i poboljšan update/cache mehanizam.
 
-## Update postojećeg GitHub Pages sajta
-Zameni `index.html`, `style.css`, `app.js`, `manifest.webmanifest` i `sw.js` fajlovima iz ovog paketa i commituj izmene. Podaci iz v1 ostaju jer v2 koristi isti localStorage ključ `mojiRacuni.v1`.
+## Update
+Uploaduj/zameni svih 5 aplikacionih fajlova (`index.html`, `style.css`, `app.js`, `manifest.webmanifest`, `sw.js`) u postojećem GitHub Pages repozitorijumu i commituj. V3 koristi isti `mojiRacuni.v1` localStorage ključ, pa postojeći podaci ostaju.
