@@ -1,13 +1,13 @@
 <!doctype html><html lang="sr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0f172a"><title>Moji Računi</title>
-<link rel="manifest" href="manifest.webmanifest?v=4.4"><link rel="stylesheet" href="style.css?v=4.4">
+<meta name="theme-color" content="#0f172a"><title>Moji Računi</title><link rel="icon" type="image/png" href="favicon.png?v=4.4.1"><link rel="apple-touch-icon" href="icon-192.png?v=4.4.1">
+<link rel="manifest" href="manifest.webmanifest?v=4.4.1"><link rel="stylesheet" href="style.css?v=4.4.1">
 </head><body><div id="loginGate" class="loginGate"><div class="loginCard"><h2>Moji Računi</h2><p>Prijavi se da pristupiš svojim računima.</p><button id="googleLoginBtn">Prijavi se sa Google</button><div id="loginMsg"></div></div></div>
 <div class="app">
 <header><div><h1>Moji Računi</h1></div><div id="cloudStatus" class="cloudStatus">☁ Povezivanje…</div></header>
 <main>
 <section id="homeView">
-<div class="monthnav"><button onclick="move(-1)">‹</button><div><b id="month"></b><small id="status"></small></div><button onclick="move(1)">›</button></div>
+<div class="monthnav"><button id="prevMonth" onclick="move(-1)">‹</button><div><b id="month"></b><small id="status"></small></div><button onclick="move(1)">›</button></div>
 <section class="hero"><div class="heroMain"><small>PREOSTALO ZA PLAĆANJE</small><strong id="left"></strong></div><div class="heroRow"><div class="heroMetric totalMetric"><span>UKUPNO</span><b id="total"></b></div><div class="heroMetric paidMetric"><span>PLAĆENO</span><b id="paid"></b></div></div><div class="progress"><i id="bar"></i></div><div class="pct" id="percent"></div></section>
 <div class="locations"><button id="kg" onclick="loc='Kragujevac';render()">🏠 Kragujevac</button><button id="bg" onclick="loc='Beograd';render()">🏢 Beograd</button></div>
 <div class="sectionTitle"><b>Troškovi</b><button onclick="addBill()">＋ Dodaj</button></div><section id="list"></section>
@@ -24,4 +24,4 @@
 <nav class="bottom"><button id="navHome" class="active" onclick="showView('home')"><span>▣</span>Računi</button><button id="navHistory" onclick="showView('history')"><span>◷</span>Istorija</button><button id="navStatistics" onclick="showView('statistics')"><span>▥</span>Statistika</button><button id="navSettings" onclick="showView('settings')"><span>⚙</span>Podešavanja</button></nav>
 </div>
 <dialog id="dlg"><div class="dlgHead"><h2 id="dt">Račun</h2><button onclick="dlg.close()">×</button></div><input id="id" type="hidden"><label>Naziv<input id="name"></label><label>Lokacija<select id="location"><option>Kragujevac</option><option>Beograd</option></select></label><label>Iznos (RSD)<input id="amount" type="number" min="0" step=".01"></label><label>Napomena<input id="note"></label><div class="actions"><button class="danger" id="deleteBtn" onclick="del()">Obriši</button><span></span><button class="save" onclick="saveBill()">Sačuvaj</button></div></dialog>
-<script type="module" src="firebase-cloud.js?v=4.4"></script><script src="app.js?v=4.4"></script></body></html>
+<script type="module" src="firebase-cloud.js?v=4.4.1"></script><script src="app.js?v=4.4.1"></script></body></html>
