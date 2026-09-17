@@ -1,7 +1,8 @@
-# Moji Računi v4.3 Secure Cloud
+# Moji Računi v4.3.1 Secure Cloud
 
-- Zadržan fiksni redosled računa.
-- Ako je budući mesec već bio kreiran pre dodavanja novih standardnih računa, v4.3 jednokratno dopunjava nedostajuće stavke iz prethodnog meseca.
-- Ne menja postojeće iznose, status plaćanja, napomene ni druge podatke.
-- Jednokratni marker po mesecu sprečava da se kasnije namerno obrisana stavka stalno vraća.
-- Novi meseci se i dalje kreiraju kopiranjem prethodnog meseca.
+- Ručno dodata nova stavka (npr. Cash kredit) odmah se kopira u sve već postojeće buduće mesece.
+- Ne pravi duplikat ako ista stavka već postoji u budućem mesecu.
+- Kopirana stavka je neplaćena, sa istim nazivom, lokacijom, iznosom i napomenom.
+- Novi meseci se i dalje nasleđuju iz prethodnog meseca.
+- Standardni računi zadržavaju fiksni redosled; nestandardni računi se prikazuju iza njih.
+- Cloud i Google autentikacija nisu menjani.
