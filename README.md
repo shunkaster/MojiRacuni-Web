@@ -1,5 +1,7 @@
-# Moji Računi v5.0
-- Mesečni troškovi i Pregled po mesecima prebačeni su na vrh Statistike.
-- Popravljen prikaz Struja/Grejanje: traži stvarno plaćene stavke nezavisno od lokacije i tolerantno na razmak/velika-mala slova.
-- Pie/donut chart uklonjen iz Troškovi po kategorijama; ostaje čist rangirani prikaz sa iznosima, procentima i barovima.
-- Core, Firebase, cloud sync i ostala logika nisu menjani.
+# Moji Računi v5.1
+
+Bug fix:
+- Struja i Grejanje grafikoni su u v5.0 imali renderer, ali renderStatistics() ga nije pozivao.
+- v5.1 eksplicitno poziva oba grafikona svaki put kada se otvori/osveži Statistika.
+- Grafikoni koriste samo plaćene račune i sabiraju istu stavku kroz lokacije.
+- Sve ostalo iz v5.0 ostaje nepromenjeno.
