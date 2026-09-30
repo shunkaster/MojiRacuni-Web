@@ -83,3 +83,29 @@ h1{color:#10265d;letter-spacing:-.6px}
 
 /* v4.7 same-category monthly comparison */
 .categoryTrend{display:grid;gap:10px}.trendRow{display:grid;grid-template-columns:58px 1fr minmax(88px,auto);align-items:center;gap:9px}.trendMonth{font-size:10px;font-weight:800;color:#60758d;text-transform:capitalize}.trendTrack{height:11px;background:#edf3f8;border-radius:10px;overflow:hidden}.trendTrack i{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,#7c5ce7,#3ba7e8)}.trendRow b{text-align:right;font-size:11px;color:#173467;white-space:nowrap}
+
+/* ===== v4.8 statistics layout ===== */
+#statisticsView .pageTitle{margin-bottom:12px}
+.utilityCompareGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 12px 14px}
+.utilityCompareGrid .chartCard{margin:0;min-width:0}
+.utilityCard .chartTitle{display:flex;align-items:center;gap:7px;color:#173467}
+.chartIcon{font-size:20px}
+.utilityChart{height:205px;display:flex;align-items:flex-end;gap:7px;padding:13px 3px 0;border-top:1px solid #edf2f7}
+.utilityCol{height:100%;flex:1;min-width:0;display:grid;grid-template-rows:25px 1fr 31px;align-items:end;text-align:center}
+.utilityValue{font-size:9px;font-weight:800;color:#274b83;white-space:nowrap}
+.utilityBarWrap{height:100%;display:flex;align-items:flex-end;justify-content:center;border-bottom:1px solid #dce6f0;background:repeating-linear-gradient(to top,transparent 0,transparent 24%,#eef3f8 25%)}
+.utilityBarWrap i{display:block;width:min(72%,34px);min-height:0;border-radius:6px 6px 2px 2px;box-shadow:0 2px 7px #00000010}
+.utilityCol small{font-size:9px;line-height:1.15;color:#5d7190;padding-top:5px}
+.electricityCard{background:linear-gradient(180deg,#fffef9,#fffaf0)}
+.electricityCard .chartIcon{color:#f2a400}
+.electricityCard .utilityBarWrap i{background:linear-gradient(180deg,#ffd85a,#f5aa20)}
+.heatingCard{background:linear-gradient(180deg,#fffafb,#fff4f6)}
+.heatingCard .chartIcon{color:#ef3f62}
+.heatingCard .utilityBarWrap i{background:linear-gradient(180deg,#ff7b94,#ef3f62)}
+#statisticsView>.chartCard{box-shadow:0 5px 18px #153e6910}
+#statisticsView>.chartCard:nth-of-type(1){border-top:3px solid #7c5ce7}
+.categoryTrend{min-height:130px}
+@media(max-width:600px){
+ .utilityCompareGrid{grid-template-columns:1fr;margin-left:12px;margin-right:12px}
+ .utilityChart{height:190px}
+}
