@@ -78,3 +78,5 @@ h1{color:#10265d;letter-spacing:-.6px}
  .heroRow{grid-column:1/-1}
  .heroMetric b{font-size:18px}
 }
+
+.categoryControls{margin:-4px 0 14px}.categoryControls select{width:100%;border:1px solid #dbe7f3;background:#f8fbff;color:#173467;border-radius:11px;padding:10px;font-weight:750}.categoryRow{padding:9px 0 11px;border-bottom:1px solid #edf2f7}.categoryTop{display:flex;justify-content:space-between;gap:10px;font-size:12px}.categoryTop b{color:#173467}.categoryTop span{color:#60758d;font-weight:700;white-space:nowrap}.categoryBar{height:8px;background:#edf3f8;border-radius:10px;margin-top:7px;overflow:hidden}.categoryBar i{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,#2d7fe8,#42b8ee)}
